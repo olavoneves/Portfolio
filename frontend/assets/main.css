@@ -1,0 +1,100 @@
+:root {
+  --dark: #7b808a;
+  --light: #f7fafc;
+  --blue: #0570d3;
+  --lightBlue: #7bafe0;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: var(--dark);
+  color: var(--light);
+  padding-top: 30px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background: black;
+  z-index: 1001;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    width: 90%;
+    justify-content: end;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 550;    
+}
+
+.section {
+  min-height: 100vh;
+  padding: 4rem;
+}
+
+#typewriter h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--blue);
+  transition: all 0.8s;
+}
+
+#typewriter h3 {
+    font-size: 2.rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    transition: all 1.2s;
+    cursor: pointer;
+}
+
+#about .bio {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  white-space: pre-line;
+  transition: all 1.6s;
+  text-align: left;
+}
+
+h3:hover {
+  color: var(--blue);
+  transform: scale(1.08);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.btn {
+  background: var(--lightBlue);
+  color: black;
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.btn:hover {
+    background-color: var(--blue);
+    color: var(--light);
+    border: none;
+    transition-duration: 0.6s;
+    transform: scale(1.02rem);
+}
