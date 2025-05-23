@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/about.css">
+    <title>Sobre Mim | Portfólio</title>
+</head>
+<body>
+    <nav class="fixed w-full bg-gray-900 bg-opacity-90 backdrop-blur-sm z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-xl font-bold gradient-text">PORTFÓLIO</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-8">
+                        <a href="index.html#home" class="nav-link text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">Início</a>
+                        <a href="about.html" class="nav-link text-gray-300 hover:text-white px-3 py-2 text-sm font-medium active">Sobre</a>
+                        <a href="index.html#projects" class="nav-link text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">Projetos</a>
+                        <a href="index.html#tech" class="nav-link text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">Tecnologias</a>
+                        <a href="index.html#contact" class="nav-link text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">Contato</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-300 hover:text-white focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-800">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html#home" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 rounded-md">Início</a>
+                <a href="about.html" class="block px-3 py-2 text-base font-medium text-white bg-gray-900 rounded-md">Sobre</a>
+                <a href="index.html#projects" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 rounded-md">Projetos</a>
+                <a href="index.html#tech" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 rounded-md">Tecnologias</a>
+                <a href="index.html#contact" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 rounded-md">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section flex items-center justify-center bg-gradient-to-br from-gray-900 to-gray-800 relative overflow-hidden pt-20">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-0 left-0 w-full h-full opacity-20">
+                <div class="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-blue-900"></div>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                Sobre <span class="gradient-text">Mim</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
+                Conheça mais sobre minha jornada, habilidades e o que me motiva como desenvolvedor.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-start">
+                <div class="md:w-1/3 mb-10 md:mb-0 md:pr-10">
+                    <div class="bg-gray-700 p-6 rounded-lg sticky top-32">
+                        <div class="flex justify-center mb-6">
+                            <div class="relative w-40 h-40">
+                                <div class="absolute inset-0 border-2 border-blue-500 rounded-full transform rotate-6"></div>
+                                <img src="../images/Imagem do WhatsApp de 2025-05-13 à(s) 21.39.12_d2785790.jpg" alt="Profile" class="relative w-full h-full rounded-full object-cover">
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-center mb-2">Olavo Neves</h3>
+                        <p class="text-blue-400 text-center mb-4">Desenvolvedor Full Stack</p>
+                        <div class="border-t border-gray-600 pt-4">
+                            <div class="flex items-center mb-3">
+                                <i class="fas fa-map-marker-alt text-blue-500 mr-3"></i>
+                                <span class="text-gray-300">São Paulo, SP</span>
+                            </div>
+                            <div class="flex items-center mb-3">
+                                <i class="fas fa-envelope text-blue-500 mr-3"></i>
+                                <span class="text-gray-300">olavo9neves@gmail.com</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-phone-alt text-blue-500 mr-3"></i>
+                                <span class="text-gray-300">+55 (11) 95550-2307</span>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <a href="index.html#contact" class="btn-primary w-full text-center text-white px-4 py-2 rounded-md font-medium block">
+                                Contate-me
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-2/3">
+                    <div class="bg-gray-700 p-8 rounded-lg mb-10">
+                        <h2 class="text-3xl font-bold mb-6 gradient-text">Minha História</h2>
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            Desde criança, sempre fui fascinado por tecnologia e como as coisas funcionam. Minha jornada no desenvolvimento começou aos 15 anos quando criei meu primeiro site usando HTML e CSS. A partir daí, mergulhei de cabeça no mundo da programação.
+                        </p>
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            Formei-me em Ciência da Computação pela Universidade XYZ, onde tive a oportunidade de participar de diversos projetos acadêmicos e competições de programação. Após a graduação, trabalhei em várias empresas de tecnologia, desde startups inovadoras até grandes corporações, sempre buscando aprender e me desafiar.
+                        </p>
+                        <p class="text-gray-300 leading-relaxed">
+                            Hoje, com mais de X anos de experiência, continuo apaixonado por criar soluções que fazem a diferença na vida das pessoas. Acredito que a tecnologia deve ser acessível, intuitiva e, acima de tudo, resolver problemas reais.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gray-700 p-8 rounded-lg mb-10">
+                        <h2 class="text-3xl font-bold mb-6 gradient-text">Minhas Habilidades</h2>
+                        
+                        <div class="mb-8">
+                            <h3 class="text-xl font-semibold mb-4 text-gray-300">Técnicas</h3>
+                            <div class="space-y-4">
+                                <div>
+                                    <div class="flex justify-between mb-1">
+                                        <span class="text-gray-300">Desenvolvimento Front-end</span>
+                                        <span class="text-blue-400">80%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-1">
+                                        <span class="text-gray-300">Desenvolvimento Back-end</span>
+                                        <span class="text-blue-400">90%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-1">
+                                        <span class="text-gray-300">UI/UX Design</span>
+                                        <span class="text-blue-400">80%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-1">
+                                        <span class="text-gray-300">Banco de Dados</span>
+                                        <span class="text-blue-400">85%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-gray-300">Soft Skills</h3>
+                            <div class="flex flex-wrap gap-3">
+                                <span class="px-4 py-2 bg-gray-600 text-gray-300 rounded-full">Comunicação</span>
+                                <span class="px-4 py-2 bg-gray-600 text-gray-300 rounded-full">Trabalho em Equipe</span>
+                                <span class="px-4 py-2 bg-gray-600 text-gray-300 rounded-full">Resolução de Problemas</span>
+                                <span class="px-4 py-2 bg-gray-600 text-gray-300 rounded-full">Gestão de Tempo</span>
+                                <span class="px-4 py-2 bg-gray-600 text-gray-300 rounded-full">Adaptabilidade</span>
+                                <span class="px-4 py-2 bg-gray-600 text-gray-300 rounded-full">Liderança</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-700 p-8 rounded-lg mb-10">
+                        <h2 class="text-3xl font-bold mb-6 gradient-text">Experiência</h2>
+                        
+                        <div class="timeline pl-8 relative">
+                            <div class="timeline-item relative mb-8">
+                                <div class="bg-gray-800 p-6 rounded-lg">
+                                    <h5 class="font-bold text-blue-400 text-xl">Desenvolvedor Full Stack - Empresa X</h5>
+                                    <p class="text-sm text-gray-400 mb-3">2020 - Presente</p>
+                                    <ul class="text-gray-300 space-y-2 list-disc pl-5">
+                                        <li>Desenvolvimento e manutenção de aplicações web usando React, Node.js e MongoDB</li>
+                                        <li>Implementação de novas funcionalidades e otimização de performance</li>
+                                        <li>Colaboração com equipes de design e produto para criar experiências de usuário excepcionais</li>
+                                        <li>Mentoria de desenvolvedores juniores</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item relative mb-8">
+                                <div class="bg-gray-800 p-6 rounded-lg">
+                                    <h5 class="font-bold text-blue-400 text-xl">Desenvolvedor Front-end - Empresa Y</h5>
+                                    <p class="text-sm text-gray-400 mb-3">2018 - 2020</p>
+                                    <ul class="text-gray-300 space-y-2 list-disc pl-5">
+                                        <li>Criação de interfaces de usuário responsivas e interativas</li>
+                                        <li>Implementação de designs pixel-perfect</li>
+                                        <li>Otimização de aplicações para performance e SEO</li>
+                                        <li>Integração com APIs RESTful</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item relative">
+                                <div class="bg-gray-800 p-6 rounded-lg">
+                                    <h5 class="font-bold text-blue-400 text-xl">Estagiário em Desenvolvimento - Empresa Z</h5>
+                                    <p class="text-sm text-gray-400 mb-3">2017 - 2018</p>
+                                    <ul class="text-gray-300 space-y-2 list-disc pl-5">
+                                        <li>Auxílio no desenvolvimento de aplicações web</li>
+                                        <li>Correção de bugs e implementação de pequenas funcionalidades</li>
+                                        <li>Participação em code reviews</li>
+                                        <li>Aprendizado de boas práticas de desenvolvimento</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-700 p-8 rounded-lg">
+                        <h2 class="text-3xl font-bold mb-6 gradient-text">O Que Eu Ofereço</h2>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="service-card bg-gray-800 p-6 rounded-lg">
+                                <div class="text-blue-500 text-3xl mb-4">
+                                    <i class="fas fa-laptop-code"></i>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 text-gray-300">Desenvolvimento Web</h3>
+                                <p class="text-gray-400">
+                                    Criação de sites e aplicações web responsivas, performáticas e com as melhores práticas do mercado.
+                                </p>
+                            </div>
+                            
+                            <div class="service-card bg-gray-800 p-6 rounded-lg">
+                                <div class="text-blue-500 text-3xl mb-4">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 text-gray-300">Aplicativos Móveis</h3>
+                                <p class="text-gray-400">
+                                    Desenvolvimento de aplicativos híbridos e nativos para iOS e Android.
+                                </p>
+                            </div>
+                            
+                            <div class="service-card bg-gray-800 p-6 rounded-lg">
+                                <div class="text-blue-500 text-3xl mb-4">
+                                    <i class="fas fa-paint-brush"></i>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 text-gray-300">UI/UX Design</h3>
+                                <p class="text-gray-400">
+                                    Design de interfaces intuitivas e agradáveis com foco na experiência do usuário.
+                                </p>
+                            </div>
+                            
+                            <div class="service-card bg-gray-800 p-6 rounded-lg">
+                                <div class="text-blue-500 text-3xl mb-4">
+                                    <i class="fas fa-server"></i>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 text-gray-300">Infraestrutura</h3>
+                                <p class="text-gray-400">
+                                    Configuração e manutenção de servidores, bancos de dados e deploy de aplicações.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 border-t border-gray-800 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="index.html" class="text-xl font-bold gradient-text">PORTFÓLIO</a>
+                    <p class="text-gray-400 mt-2">&copy; 2025 Olavo Neves. Todos os direitos reservados.</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/projects.css">
+    <title>Projetos | Portfólio</title>
+</head>
+<body>
+    <nav class="fixed w-full bg-gray-900 bg-opacity-90 backdrop-blur-sm z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-xl font-bold gradient-text">PORTFÓLIO</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-8">
+                        <a href="index.html#home" class="nav-link text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">Início</a>
+                        <a href="about.html" class="nav-link text-gray-300 hover:text-white px-3 py-2 text-sm font-medium active">Sobre</a>
+                        <a href="index.html#projects" class="nav-link text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">Projetos</a>
+                        <a href="index.html#tech" class="nav-link text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">Tecnologias</a>
+                        <a href="index.html#contact" class="nav-link text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">Contato</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-300 hover:text-white focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-800">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html#home" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 rounded-md">Início</a>
+                <a href="about.html" class="block px-3 py-2 text-base font-medium text-white bg-gray-900 rounded-md">Sobre</a>
+                <a href="index.html#projects" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 rounded-md">Projetos</a>
+                <a href="index.html#tech" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 rounded-md">Tecnologias</a>
+                <a href="index.html#contact" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 rounded-md">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Hero Section -->
+    <section class="section flex items-center justify-center bg-gradient-to-br from-gray-900 to-gray-800 relative overflow-hidden pt-20">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-0 left-0 w-full h-full opacity-20">
+                <div class="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-blue-900"></div>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                Meus <span class="gradient-text">Projetos</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
+                Explore minha coleção de trabalhos criativos e soluções inovadoras
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Filters -->
+            <div class="mb-12 text-center">
+                <h2 class="text-2xl font-bold mb-6 gradient-text">Filtrar por Categoria</h2>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <button class="filter-btn active px-4 py-2 rounded-full" data-filter="all">Todos</button>
+                    <button class="filter-btn px-4 py-2 rounded-full" data-filter="web">Web</button>
+                    <button class="filter-btn px-4 py-2 rounded-full" data-filter="mobile">Mobile</button>
+                    <button class="filter-btn px-4 py-2 rounded-full" data-filter="design">Design</button>
+                    <button class="filter-btn px-4 py-2 rounded-full" data-filter="fullstack">Full Stack</button>
+                </div>
+            </div>
+            
+            <!-- Projects Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card rounded-lg" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="E-commerce Platform">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-tag text-xs px-3 py-1 rounded-full">React</span>
+                            <span class="tech-tag text-xs px-3 py-1 rounded-full">Node.js</span>
+                            <span class="tech-tag text-xs px-3 py-1 rounded-full">MongoDB</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Plataforma E-commerce</h3>
+                        <p class="text-gray-400 mb-4">Solução completa de e-commerce com carrinho de compras, pagamentos e painel administrativo.</p>
+                        <div class="flex justify-between items-center">
+                            <button class="view-details-btn px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-md" data-project="1">
+                                Ver Detalhes
+                            </button>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center">
+                                <i class="fab fa-github mr-2"></i> Código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card rounded-lg" data-category="mobile">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555774698-0f77e70ac5fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Fitness App">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-tag text-xs px-3 py-1 rounded-full">React Native</span>
+                            <span class="tech-tag text-xs px-3 py-1 rounded-full">Firebase</span>
+                            <span class="tech-tag text-xs px-3 py-1 rounded-full">Redux</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">App Fitness</h3>
+                        <p class="text-gray-400 mb-4">Aplicativo de acompanhamento de exercícios com rotinas personalizadas e progresso diário.</p>
+                        <div class="flex justify-between items-center">
+                            <button class="view-details-btn px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-md" data-project="2">
+                                Ver Detalhes
+                            </button>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center">
+                                <i class="fab fa-github mr-2"></i> Código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card rounded-lg" data-category="design">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1467232004584-a241de8b3885?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="UI/UX Design">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-tag text-xs px-3 py-1 rounded-full">Figma</span>
+                            <span class="tech-tag text-xs px-3 py-1 rounded-full">Adobe XD</span>
+                            <span class="tech-tag text-xs px-3 py-1 rounded-full">Photoshop</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Sistema de Design</h3>
+                        <p class="text-gray-400 mb-4">Design system completo com componentes reutilizáveis, guia de estilo e documentação.</p>
+                        <div class="flex justify-between items-center">
+                            <button class="view-details-btn px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-md" data-project="3">
+                                Ver Detalhes
+                            </button>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center">
+                                <i class="fab fa-behance mr-2"></i> Behance
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card rounded-lg" data-category="fullstack">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Task Manager">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-tag text-xs px-3 py-1 rounded-full">Vue.js</span>
+                            <span class="tech-tag text-xs px-3 py-1 rounded-full">Express</span>
+                            <span class="tech-tag text-xs px-3 py-1 rounded-full">PostgreSQL</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Gerenciador de Tarefas</h3>
+                        <p class="text-gray-400 mb-4">Aplicação para organização pessoal com autenticação, categorias e lembretes.</p>
+                        <div class="flex justify-between items-center">
+                            <button class="view-details-btn px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-md" data-project="4">
+                                Ver Detalhes
+                            </button>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center">
+                                <i class="fab fa-github mr-2"></i> Código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card rounded-lg" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Portfolio Website">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-tag text-xs px-3 py-1 rounded-full">HTML/CSS</span>
+                            <span class="tech-tag text-xs px-3 py-1 rounded-full">JavaScript</span>
+                            <span class="tech-tag text-xs px-3 py-1 rounded-full">GSAP</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Website Portfólio</h3>
+                        <p class="text-gray-400 mb-4">Site pessoal com animações fluidas, design responsivo e seção de contato.</p>
+                        <div class="flex justify-between items-center">
+                            <button class="view-details-btn px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-md" data-project="5">
+                                Ver Detalhes
+                            </button>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center">
+                                <i class="fab fa-github mr-2"></i> Código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-card rounded-lg" data-category="mobile">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555774698-0f77e70ac5fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Recipe App">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-tag text-xs px-3 py-1 rounded-full">Flutter</span>
+                            <span class="tech-tag text-xs px-3 py-1 rounded-full">Dart</span>
+                            <span class="tech-tag text-xs px-3 py-1 rounded-full">Firebase</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">App de Receitas</h3>
+                        <p class="text-gray-400 mb-4">Aplicativo com milhares de receitas, filtros por ingredientes e modo offline.</p>
+                        <div class="flex justify-between items-center">
+                            <button class="view-details-btn px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-md" data-project="6">
+                                Ver Detalhes
+                            </button>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center">
+                                <i class="fab fa-github mr-2"></i> Código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button class="px-6 py-3 border border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white rounded-md transition-all">
+                    Carregar Mais Projetos
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="modal fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center opacity-0 invisible">
+        <div class="modal-content relative max-w-4xl w-full mx-4 bg-gray-800 rounded-lg overflow-hidden">
+            <button class="close-modal absolute top-4 right-4 text-gray-400 hover:text-white z-50">
+                <i class="fas fa-times text-2xl"></i>
+            </button>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2">
+                <div class="project-modal-image h-64 lg:h-full overflow-hidden">
+                    <img src="" alt="Project Image" class="w-full h-full object-cover">
+                </div>
+                
+                <div class="p-8">
+                    <h2 class="text-3xl font-bold mb-4 gradient-text" id="modal-project-title">Project Title</h2>
+                    <div class="flex flex-wrap gap-2 mb-6" id="modal-project-tags"></div>
+                    <p class="text-gray-300 mb-6" id="modal-project-description">Project description goes here...</p>
+                    
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold mb-3 text-gray-300">Tecnologias Utilizadas</h3>
+                        <div class="flex flex-wrap gap-2" id="modal-project-tech"></div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold mb-3 text-gray-300">Desafios e Soluções</h3>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-400" id="modal-project-challenges"></ul>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#" class="px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-md flex items-center" id="modal-project-live">
+                            <i class="fas fa-external-link-alt mr-2"></i> Ver Projeto
+                        </a>
+                        <a href="#" class="px-4 py-2 border border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white rounded-md flex items-center" id="modal-project-code">
+                            <i class="fab fa-github mr-2"></i> Código Fonte
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-900 border-t border-gray-800 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <span class="text-xl font-bold gradient-text">PORTFÓLIO</span>
+                    <p class="text-gray-400 mt-2">&copy; 2025 Olavo Neves. Todos os direitos reservados.</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/project.js"></script>
+</body>
+</html>

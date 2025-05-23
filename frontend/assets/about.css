@@ -79,10 +79,6 @@ body {
     color: var(--primary-dark);
 }
 
-.hero-text {
-    text-shadow: 0 0 10px rgba(0, 180, 216, 0.5);
-}
-
 .gradient-text {
     background: linear-gradient(90deg, var(--accent-blue), #48cae4);
     -webkit-background-clip: text;
@@ -103,4 +99,28 @@ body {
 
 .timeline {
     border-left: 2px solid var(--accent-blue);
+}
+
+.skill-bar {
+    height: 8px;
+    background-color: var(--secondary-dark);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent-blue), #48cae4);
+    border-radius: 4px;
+}
+
+.service-card {
+    transition: all 0.3s ease;
+    border: 1px solid var(--primary-blue);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 180, 216, 0.2);
+    border-color: var(--accent-blue);
 }

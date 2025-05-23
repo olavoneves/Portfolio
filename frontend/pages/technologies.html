@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/technologies.css">
+    <title>Tecnologias | Portfólio</title>
+</head>
+<body>
+    <nav class="fixed w-full bg-gray-900 bg-opacity-90 backdrop-blur-sm z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-xl font-bold gradient-text">PORTFÓLIO</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-8">
+                        <a href="index.html#home" class="nav-link text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">Início</a>
+                        <a href="about.html" class="nav-link text-gray-300 hover:text-white px-3 py-2 text-sm font-medium active">Sobre</a>
+                        <a href="index.html#projects" class="nav-link text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">Projetos</a>
+                        <a href="index.html#tech" class="nav-link text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">Tecnologias</a>
+                        <a href="index.html#contact" class="nav-link text-gray-300 hover:text-white px-3 py-2 text-sm font-medium">Contato</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-300 hover:text-white focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-800">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html#home" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 rounded-md">Início</a>
+                <a href="about.html" class="block px-3 py-2 text-base font-medium text-white bg-gray-900 rounded-md">Sobre</a>
+                <a href="index.html#projects" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 rounded-md">Projetos</a>
+                <a href="index.html#tech" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 rounded-md">Tecnologias</a>
+                <a href="index.html#contact" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 rounded-md">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+     <!-- Technologies Hero Section -->
+    <section class="section flex items-center justify-center bg-gradient-to-br from-gray-900 to-gray-800 relative overflow-hidden pt-20">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-0 left-0 w-full h-full opacity-20">
+                <div class="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-blue-900"></div>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                Minhas <span class="gradient-text">Tecnologias</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
+                Conheça as ferramentas e tecnologias que domino e utilizo para criar soluções incríveis
+            </p>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="py-20 bg-gray-800" id="tech">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Categories -->
+            <div class="mb-12 text-center">
+                <h2 class="text-2xl font-bold mb-6 gradient-text">Filtrar por Categoria</h2>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <button class="category-tab active px-4 py-2 text-gray-300 font-medium" data-category="all">Todas</button>
+                    <button class="category-tab px-4 py-2 text-gray-300 font-medium" data-category="frontend">Frontend</button>
+                    <button class="category-tab px-4 py-2 text-gray-300 font-medium" data-category="backend">Backend</button>
+                    <button class="category-tab px-4 py-2 text-gray-300 font-medium" data-category="mobile">Mobile</button>
+                    <button class="category-tab px-4 py-2 text-gray-300 font-medium" data-category="database">Banco de Dados</button>
+                    <button class="category-tab px-4 py-2 text-gray-300 font-medium" data-category="devops">DevOps</button>
+                </div>
+            </div>
+            
+            <!-- Technologies Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- React -->
+                <div class="tech-card rounded-lg" data-category="frontend">
+                    <div class="tech-card-inner">
+                        <div class="tech-card-front">
+                            <i class="fab fa-react tech-icon text-blue-400"></i>
+                            <h3 class="text-xl font-bold mb-2">React</h3>
+                            <div class="progress-bar w-full mb-4">
+                                <div class="progress-fill" style="width: 90%"></div>
+                            </div>
+                            <span class="text-sm text-gray-400">Avançado</span>
+                        </div>
+                        <div class="tech-card-back">
+                            <p class="text-gray-300 text-center mb-4">Biblioteca JavaScript para construção de interfaces de usuário. Domino hooks, context API, Redux e integração com APIs.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-blue-900 text-blue-400 rounded-full text-xs">Hooks</span>
+                                <span class="px-2 py-1 bg-blue-900 text-blue-400 rounded-full text-xs">Context API</span>
+                                <span class="px-2 py-1 bg-blue-900 text-blue-400 rounded-full text-xs">Redux</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Node.js -->
+                <div class="tech-card rounded-lg" data-category="backend">
+                    <div class="tech-card-inner">
+                        <div class="tech-card-front">
+                            <i class="fab fa-node-js tech-icon text-green-500"></i>
+                            <h3 class="text-xl font-bold mb-2">Node.js</h3>
+                            <div class="progress-bar w-full mb-4">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                            <span class="text-sm text-gray-400">Avançado</span>
+                        </div>
+                        <div class="tech-card-back">
+                            <p class="text-gray-300 text-center mb-4">Ambiente de execução JavaScript server-side. Experiência com Express, criação de APIs RESTful e autenticação JWT.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-green-900 text-green-400 rounded-full text-xs">Express</span>
+                                <span class="px-2 py-1 bg-green-900 text-green-400 rounded-full text-xs">REST APIs</span>
+                                <span class="px-2 py-1 bg-green-900 text-green-400 rounded-full text-xs">JWT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Vue.js -->
+                <div class="tech-card rounded-lg" data-category="frontend">
+                    <div class="tech-card-inner">
+                        <div class="tech-card-front">
+                            <i class="fab fa-vuejs tech-icon text-green-400"></i>
+                            <h3 class="text-xl font-bold mb-2">Vue.js</h3>
+                            <div class="progress-bar w-full mb-4">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                            <span class="text-sm text-gray-400">Avançado</span>
+                        </div>
+                        <div class="tech-card-back">
+                            <p class="text-gray-300 text-center mb-4">Framework progressivo para construção de interfaces. Experiência com Vuex, Vue Router e Composition API.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-green-800 text-green-300 rounded-full text-xs">Vuex</span>
+                                <span class="px-2 py-1 bg-green-800 text-green-300 rounded-full text-xs">Vue Router</span>
+                                <span class="px-2 py-1 bg-green-800 text-green-300 rounded-full text-xs">Composition API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- MongoDB -->
+                <div class="tech-card rounded-lg" data-category="database">
+                    <div class="tech-card-inner">
+                        <div class="tech-card-front">
+                            <i class="fas fa-database tech-icon text-green-600"></i>
+                            <h3 class="text-xl font-bold mb-2">MongoDB</h3>
+                            <div class="progress-bar w-full mb-4">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                            <span class="text-sm text-gray-400">Intermediário-Avançado</span>
+                        </div>
+                        <div class="tech-card-back">
+                            <p class="text-gray-300 text-center mb-4">Banco de dados NoSQL. Experiência com Mongoose, queries complexas, agregações e modelagem de dados.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-green-900 text-green-400 rounded-full text-xs">Mongoose</span>
+                                <span class="px-2 py-1 bg-green-900 text-green-400 rounded-full text-xs">Aggregation</span>
+                                <span class="px-2 py-1 bg-green-900 text-green-400 rounded-full text-xs">Indexing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- React Native -->
+                <div class="tech-card rounded-lg" data-category="mobile">
+                    <div class="tech-card-inner">
+                        <div class="tech-card-front">
+                            <i class="fab fa-react tech-icon text-blue-300"></i>
+                            <h3 class="text-xl font-bold mb-2">React Native</h3>
+                            <div class="progress-bar w-full mb-4">
+                                <div class="progress-fill" style="width: 70%"></div>
+                            </div>
+                            <span class="text-sm text-gray-400">Intermediário</span>
+                        </div>
+                        <div class="tech-card-back">
+                            <p class="text-gray-300 text-center mb-4">Framework para desenvolvimento de apps mobile multiplataforma. Experiência com Expo, navegação e integração de APIs.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-blue-800 text-blue-300 rounded-full text-xs">Expo</span>
+                                <span class="px-2 py-1 bg-blue-800 text-blue-300 rounded-full text-xs">React Navigation</span>
+                                <span class="px-2 py-1 bg-blue-800 text-blue-300 rounded-full text-xs">Native Modules</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Docker -->
+                <div class="tech-card rounded-lg" data-category="devops">
+                    <div class="tech-card-inner">
+                        <div class="tech-card-front">
+                            <i class="fab fa-docker tech-icon text-blue-500"></i>
+                            <h3 class="text-xl font-bold mb-2">Docker</h3>
+                            <div class="progress-bar w-full mb-4">
+                                <div class="progress-fill" style="width: 65%"></div>
+                            </div>
+                            <span class="text-sm text-gray-400">Intermediário</span>
+                        </div>
+                        <div class="tech-card-back">
+                            <p class="text-gray-300 text-center mb-4">Plataforma de containerização. Experiência com Docker Compose, criação de imagens e orquestração básica.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-blue-900 text-blue-400 rounded-full text-xs">Docker Compose</span>
+                                <span class="px-2 py-1 bg-blue-900 text-blue-400 rounded-full text-xs">Multi-stage</span>
+                                <span class="px-2 py-1 bg-blue-900 text-blue-400 rounded-full text-xs">Volumes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Python -->
+                <div class="tech-card rounded-lg" data-category="backend">
+                    <div class="tech-card-inner">
+                        <div class="tech-card-front">
+                            <i class="fab fa-python tech-icon text-yellow-400"></i>
+                            <h3 class="text-xl font-bold mb-2">Python</h3>
+                            <div class="progress-bar w-full mb-4">
+                                <div class="progress-fill" style="width: 60%"></div>
+                            </div>
+                            <span class="text-sm text-gray-400">Intermediário</span>
+                        </div>
+                        <div class="tech-card-back">
+                            <p class="text-gray-300 text-center mb-4">Linguagem versátil para backend, automação e análise de dados. Experiência com Flask e Django básico.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-yellow-900 text-yellow-400 rounded-full text-xs">Flask</span>
+                                <span class="px-2 py-1 bg-yellow-900 text-yellow-400 rounded-full text-xs">Django</span>
+                                <span class="px-2 py-1 bg-yellow-900 text-yellow-400 rounded-full text-xs">Pandas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PostgreSQL -->
+                <div class="tech-card rounded-lg" data-category="database">
+                    <div class="tech-card-inner">
+                        <div class="tech-card-front">
+                            <i class="fas fa-database tech-icon text-blue-400"></i>
+                            <h3 class="text-xl font-bold mb-2">PostgreSQL</h3>
+                            <div class="progress-bar w-full mb-4">
+                                <div class="progress-fill" style="width: 70%"></div>
+                            </div>
+                            <span class="text-sm text-gray-400">Intermediário</span>
+                        </div>
+                        <div class="tech-card-back">
+                            <p class="text-gray-300 text-center mb-4">Banco de dados relacional avançado. Experiência com modelagem, queries complexas e stored procedures.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-blue-900 text-blue-400 rounded-full text-xs">Joins</span>
+                                <span class="px-2 py-1 bg-blue-900 text-blue-400 rounded-full text-xs">Indexes</span>
+                                <span class="px-2 py-1 bg-blue-900 text-blue-400 rounded-full text-xs">Transactions</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 text-center gradient-text">Minha Jornada Tecnológica</h2>
+            
+            <div class="experience-timeline max-w-3xl mx-auto">
+                <!-- Item 1 -->
+                <div class="timeline-item bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="flex flex-col md:flex-row justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white">Início na Programação</h3>
+                        <span class="text-blue-400">2015 - 2016</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Primeiros contatos com HTML, CSS e JavaScript básico. Criação de sites estáticos e pequenos scripts.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">HTML5</span>
+                        <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">CSS3</span>
+                        <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">JavaScript</span>
+                    </div>
+                </div>
+                
+                <!-- Item 2 -->
+                <div class="timeline-item bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="flex flex-col md:flex-row justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white">Desenvolvimento Frontend</h3>
+                        <span class="text-blue-400">2017 - 2018</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Aprofundamento em frameworks frontend como React e Vue.js. Primeiros projetos profissionais.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">React</span>
+                        <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Vue.js</span>
+                        <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">SASS</span>
+                    </div>
+                </div>
+                
+                <!-- Item 3 -->
+                <div class="timeline-item bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="flex flex-col md:flex-row justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white">Backend e Bancos de Dados</h3>
+                        <span class="text-blue-400">2019 - 2020</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Expansão para desenvolvimento backend com Node.js e bancos de dados relacionais e NoSQL.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Node.js</span>
+                        <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">MongoDB</span>
+                        <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">PostgreSQL</span>
+                    </div>
+                </div>
+                
+                <!-- Item 4 -->
+                <div class="timeline-item bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="flex flex-col md:flex-row justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white">Desenvolvimento Full Stack</h3>
+                        <span class="text-blue-400">2021 - 2022</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Projetos completos do frontend ao backend, arquitetura de sistemas e integrações complexas.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Express</span>
+                        <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">REST APIs</span>
+                        <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">JWT</span>
+                    </div>
+                </div>
+                
+                <!-- Item 5 -->
+                <div class="timeline-item bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="flex flex-col md:flex-row justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white">DevOps e Mobile</h3>
+                        <span class="text-blue-400">2023 - Presente</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Expansão para DevOps com Docker e desenvolvimento mobile com React Native.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Docker</span>
+                        <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">React Native</span>
+                        <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">CI/CD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 border-t border-gray-800 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <span class="text-xl font-bold gradient-text">PORTFÓLIO</span>
+                    <p class="text-gray-400 mt-2">&copy; 2025 Olavo Neves. Todos os direitos reservados.</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/tech.js"></script>
+</body>
+</html>
